@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="forgot_your_password">Forgot your password?</string>
+	<string name="user_name">User Name</string>
+	<string name="password">Password</string>
+	<string name="login">LOGIN</string>
+</resources>

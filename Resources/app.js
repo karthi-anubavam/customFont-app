@@ -22,11 +22,10 @@ var tab1 = Titanium.UI.createTab({
   var platform = Ti.Platform.osname;
 
 
-
-  var FuturaStd_Medium = 'Futura Std'; // use the friendly-name on iOS
-  var FuturaStd_CondensedLight = 'Futura Std - Light Condensed'; // use the friendly-name on iOS
+  var FuturaStd_Medium = 'FuturaStd-Medium'; // use the friendly-name on iOS
+  var FuturaStd_CondensedLight = 'FuturaStd-CondensedLight';
   var FuturaStd_CondensedMedium = 'Futura MdCn BT';
-  var FuturaStd_Bold = 'Futura Std - Bold';
+  var FuturaStd_Bold = 'FuturaStd-Bold';
   if(platform == 'android') {
      FuturaStd_Medium = 'FuturaStd-Medium';
      FuturaStd_CondensedLight = 'FuturaStd-CondensedLight'; 
@@ -47,7 +46,7 @@ win1.add(label0);
 var label1 = Titanium.UI.createLabel({
 	top:20,
 	color:'#000',
-	text:'I am Label 0',
+	text:'I am Label 1',
 	font:{fontSize:20,fontFamily:FuturaStd_Medium},
 	textAlign:'center',
 	width:'auto'
@@ -57,7 +56,7 @@ win1.add(label1);
 var label2 = Titanium.UI.createLabel({
 	top:20,
 	color:'#000',
-	text:'I am Label 0',
+	text:'I am Label 2',
 	font:{fontSize:20,fontFamily:FuturaStd_CondensedLight},
 	textAlign:'center',
 	width:'auto'
@@ -67,7 +66,7 @@ win1.add(label2);
 var label3 = Titanium.UI.createLabel({
 	top:20,
 	color:'#000',
-	text:'I am Label 0',
+	text:'I am Label 3',
 	font:{fontSize:20,fontFamily:FuturaStd_CondensedMedium},
 	textAlign:'center',
 	width:'auto'
@@ -77,7 +76,7 @@ win1.add(label3);
 var label4 = Titanium.UI.createLabel({
 	top:20,
 	color:'#000',
-	text:'I am Label 0',
+	text:'I am Label 4',
 	font:{fontSize:20,fontFamily:FuturaStd_Bold},
 	textAlign:'center',
 	width:'auto'
@@ -92,6 +91,61 @@ var win2 = Titanium.UI.createWindow({
     backgroundColor:'#fff',
     layout:"vertical"
 });
+
+var ln = Titanium.UI.createLabel({
+	top:20,
+	color:'#000',
+	text:'Here I am checking i18n',
+	font:{fontSize:20,fontFamily:FuturaStd_Bold},
+	textAlign:'center',
+	width:'auto'
+});
+win2.add(ln);
+
+var forgetPass = Titanium.UI.createLabel({
+	top:20,
+	color:'#000',
+	text:L('forgot_your_password'),
+	font:{fontSize:20,fontFamily:FuturaStd_Bold},
+	textAlign:'center',
+	width:'auto'
+});
+win2.add(forgetPass);
+
+var uName = Titanium.UI.createLabel({
+	top:20,
+	color:'#000',
+	text:L('user_name'),
+	font:{fontSize:20,fontFamily:FuturaStd_Bold},
+	textAlign:'center',
+	width:'auto'
+});
+win2.add(uName);
+
+var pass = Titanium.UI.createLabel({
+	top:20,
+	color:'#000',
+	text:L('password'),
+	font:{fontSize:20,fontFamily:FuturaStd_Bold},
+	textAlign:'center',
+	width:'auto'
+});
+win2.add(pass);
+
+var login = Titanium.UI.createLabel({
+	top:20,
+	color:'#000',
+	text:L('login'),
+	font:{fontSize:20,fontFamily:FuturaStd_Bold},
+	textAlign:'center',
+	width:'auto'
+});
+win2.add(login);
+
+
+
+
+
 var tab2 = Titanium.UI.createTab({  
     icon:'KS_nav_ui.png',
     title:'Tab 2',
